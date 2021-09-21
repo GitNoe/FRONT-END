@@ -86,6 +86,23 @@ h2{ /*todos los h2*/
     text-align: center;
     color:blue;
     text-shadow:1px 1px 1px black;
+    animation: 1s ease both;
+}
+
+@keyframes magia {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+h2:hover{
+    animation-name: magia;
 }
 
 /*ELEMENTOS FOOTER*/
