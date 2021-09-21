@@ -1,0 +1,93 @@
+body{ /*características generales del cuerpo*/
+    background-color: powderblue;
+    height: 2000px; /* for scrolling*/
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header{ /*características generales de la cabecera*/
+    height: 70px;
+    margin: 0px;
+    padding: 0px; 
+}
+
+nav{
+    position:fixed; /*la posición es absoluta y siempre se ve el menú*/
+    background-color:rgba(228, 168, 168, 0.8); 
+    /*pongo transparencia para que se vea la página cuando scrolling*/
+    width: 100%;  
+}
+
+li{ /*elementos del menú*/
+    background-color: rgb(184, 243, 96);
+    color:orangered;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none; /*para que no subraye el enlace*/
+    display:inline-block; /*forma en la que se muestra*/
+    font-size: 16px;
+    cursor: pointer; /*sale una manita en vez de la flecha*/
+}
+
+section{
+    color:white;
+    border:1px solid black;
+    padding: 20px;
+    /* margin:0px 100px 0px 100px; 
+    /*arriba derecha abajo izquierda*/ /* se puede poner con porcentajes*/
+    width: 80%;
+    margin-left: 10%; /*la mitad del 20% que resta de ancho*/
+    background-color:mediumseagreen;
+    background-image: url(../img/homer.jpg);
+    background-size:100%;
+}
+
+#caja-1{
+    background-color: rgb(206, 26, 26); /*rgba(red, green, blue, alpha)*/
+    color:rgb(40, 21, 209);
+    text-shadow: 1px 1px 2px black; /* (eje x, eje y, difuminación/desenfoque) + color */
+    padding-left: 20px;
+    font-size: 20px;
+    margin-right: 80%;
+}
+
+#caja-2{
+    height:50px;
+    width:100px;
+    border: 1px solid rgb(255, 0, 234);
+    border-radius: 20%;
+    background-image: url(../img/paisaje.jpg);
+    float:left;
+    margin: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    /* position:absolute; -> por defecto los div tienen posición relativa*/
+    /* con z-index: se puede modificar el orden de mostrar los divs*/
+    position:absolute;
+    z-index: 1;
+    top:-5px; right: 5px; /*es como poner un margen pero contando con la posición absoluta*/
+}
+
+#caja-3{
+    background-color: rgb(104, 104, 224);
+    color: rgb(90, 50, 7);
+    text-shadow: black;
+    margin-right: 80%;
+}
+
+#caja-4{
+    background-color:brown;
+    padding: 20px;
+    max-width: 200px;
+    max-height: 100px; /*se crea una barra de scroll*/
+    overflow: auto; /*para mostrar el contenido del scroll*/
+}
+
+#caja-5{
+    width: 400px;
+    height: 400px;
+    border: 1px solid black;
+    /*background-image: linear-gradient(black, red, pink); 
+    /*por defecto está en vertical*/
+    background-image: linear-gradient(to bottom right, red, black);
+}
+

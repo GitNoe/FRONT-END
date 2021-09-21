@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario con html</title>
+</head>
+<body>
+
+    <header>
+        <h3>Formularios</h3>
+    </header>
+
+    <main>
+        <section>
+
+            <form>
+                <fieldset>
+                    <legend>Datos personales</legend>
+
+                    <ul>
+                        <li>
+                            <label>Nombre &nbsp;</label>
+                            <input type="text" name="nombre">                   
+                        </li>
+                        <li></li>
+                        <li>
+                            <label>Correo &nbsp;</label>
+                            <input type="email" name="correo">
+                        </li>
+                        <li></li>
+                        <li>
+                            <label>Contraseña &nbsp;</label>
+                            <input type="password" name="contraseña">
+                        </li>
+                        <li></li>
+                        <li>
+                            <label>Fecha de nacimiento &nbsp;</label>
+                            <input type="date" name="fecha">
+                        </li>
+                        <li></li>
+                        <li>
+                            <label>Foto <br></label>
+                            <input type="file" name="foto">
+                        </li>
+                        <li></li>
+                        <li>
+                            <label>Comentarios <br></label>
+                            <textarea name="comentarios" id cols="30" rows="10"></textarea>
+                        </li>
+                    </ul>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Estudios e intereses</legend>
+
+                    <p>Estudios</p>
+                    <ul>
+                        <li>                          
+                            <label>ESO</label>
+                            <input type="radio" name="ESO">
+                        </li>
+                        <li></li>
+                        <li>
+                            <label>FP</label>
+                            <input type="radio" name="FP">
+                        </li>
+                        <li></li>
+                        <li>
+                            <label>Universitarios</label>
+                            <input type="radio" name="uni">
+                        </li>
+                    </ul>
+                    <br>
+                    <p>Intereses</p>
+                    <ul>
+                        <li>
+                            <label>Cine</label>
+                            <input type="checkbox" name="cine">
+                        </li>
+                        <li></li>
+                        <li>
+                            <label>Deports</label>
+                            <input type="checkbox" name="dep">
+                        </li>
+                        <li></li>
+                        <li>
+                            <label>Música</label>
+                            <input type="checkbox" name="music">
+                        </li>
+                    </ul>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Datos de la revista</legend>
+                    <select name="frecuencia">
+                        <option value="semanal">Semanal</option>
+                        <option value="quincenal">Quincenal</option>
+                        <option value="mensual">Mensual</option>
+                    </select>
+                    <select name="lugar">
+                        <option value="ponte">Pontevedra</option>
+                        <option value="coru">A Coruña</option>
+                        <option value="lugo">Lugo</option>
+                        <option value="oure">Ourense</option>
+                    </select>
+                </fieldset>
+                <br>
+                <button type="submit">Enviar</button>
+                <button type="reset">Borrar</button>
+            </form>
+
+        </section>
+    </main>
+    
+</body>
+</html>

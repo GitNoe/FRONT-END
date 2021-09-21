@@ -1,0 +1,37 @@
+body{
+    border: 2px solid rgb(99, 183, 231);
+    margin-left: 392px;
+    margin-right: 393px; /*ajustado por ancho de la cabecera*/
+    position: absolute; /*para que no se descoloquen los elementos al minimizar*/
+}
+
+#bloque{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+#columna1{
+    padding-left: 25px;
+    padding-bottom: 10px;
+}
+
+#columna2{
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-bottom: 10px;
+}
+
+#pie{ 
+    background-color:rgb(235, 75, 75);
+    margin-top: 10px;
+    display: grid; /*para que me rellene el final de body también*/
+}
+
+#info{
+    padding-left: 25px;
+    color:white;
+}
+
+#redes{
+    padding-left: 130px;
+}

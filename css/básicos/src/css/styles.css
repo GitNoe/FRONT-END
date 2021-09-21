@@ -1,0 +1,130 @@
+
+
+/*afectaría a todos los h1 que se linkeen a este css, 
+en este caso solo hay index y selectores*/
+h1{
+    color:tomato;
+    font-size: 45px;
+    background-image: url('../img/gato.jpg');
+    background-repeat: no-repeat;
+    background-position-x:center;
+    background-size: 100% cover;
+}
+
+section{
+    border: 1px  solid red;
+    /*el orden es ancho (pixeles), tipo y color*/
+    padding: 20px;
+}
+
+/*las CLASES se indican con un punto antes del nombre*/
+.item-list{
+    color:salmon;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.red{
+    color:red;
+}
+
+.small{
+    font-size: 10px;
+}
+
+.big{
+    font-size: 20px;
+}
+
+/*los id se indican con una almohadilla previa al nombre*/
+#intro{
+    background-image: url('../img/paisaje.jpg');
+    /*es importante poner bien la ruta en css para que acceda al archivo*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+#intro:first-child{ /*para poder modificar el párrafo sin complicarse*/
+    color:white;
+    text-shadow:2px 2px 4px black; 
+    /* (eje x, eje y, difuminación/desenfoque) en pixeles + color */
+}
+
+:lang(lat){ 
+    /*funciona como una pseudo clase y afectaría a todo lo que tenga el atributo lat*/
+    color:chartreuse;
+}
+
+#ocio{
+    background-color:yellowgreen;
+}
+
+body{
+    padding:20px;
+    background-color:snow;
+}
+
+/*PSEUDO-CLASES*/
+a:visited{ /*sitio visitado*/
+    color: green;
+}
+
+a:hover{ /*pasando el cursor por encima*/
+    color: red;
+}
+
+h1:hover{
+    color:steelblue;
+}
+
+/*TABLAS*/
+tr:nth-child(odd){ /*impares*/
+    background-color:aquamarine ;
+}
+
+tr:nth-child(even){ /*pares*/
+    background-color:hotpink;
+}
+
+tr:first-child{ /*primera fila*/
+    background-color: chartreuse;
+}
+
+tr:last-child{ /*última fila*/
+    background-color: crimson;
+}
+
+td:nth-child(3){ /*columna 3*/
+    color:indigo;
+    max-width: 30%;
+}
+
+td:empty{ /*los elementos vacíos adquieren estas características*/
+    background-color: black;
+}
+
+td:not(.classtd){ 
+    /*aquí se indica la clase de la tabla que tienen algunas celdas 
+    y que no le afeten los siguientes cambios*/
+    border: 3px solid black;
+}
+
+/*para cambiar el estilo de partes específicas de algún elemento (como párrafo)*/
+/*funciona como una pseudoclase*/
+p::first-letter{
+    font-size:300% ;
+}
+
+p::selection{ /*seleccionar texto*/
+    background-color: darkolivegreen;
+}
+
+p::after{
+    content: 'ver más';
+    font-size: 200%;
+}
+
+p::before{
+    content: 'welcome';
+    font-size: 200%;
+}

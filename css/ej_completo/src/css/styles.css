@@ -1,0 +1,131 @@
+body{
+    position: absolute;
+    height: 1500px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/*ELEMENTOS HEADER*/
+
+header{
+    height: 120px;
+}
+
+.header{
+    position:absolute;
+    text-align: center;
+    width: 100%; 
+    margin-top: 20px;
+    border-top: 2px solid black; 
+}
+
+.menu{
+    color:grey;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    display:inline-block;
+    padding: 20px;  
+}
+
+.menu:hover{
+    color:blue;
+    font-size: 24px;
+    font-style: italic;
+    font-family: monospace;
+    cursor:pointer;
+}
+
+/*ELEMENTOS MAIN*/
+
+/*primera parte*/
+
+.head{
+    position: relative;
+    display:inline-block;
+    filter: brightness(0.7); /*para oscurecer la imagen*/
+}
+
+.texto{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+#primer{
+    color:white;
+    text-shadow:2px 2px 4px black; 
+    font-size: 35px;
+}
+
+#segun{
+    color:blue;
+    text-shadow:2px 2px 4px black; 
+    font-size: 40px;
+    font-style: italic;
+    font-family: monospace;
+}
+
+/*segunda parte*/
+
+.principal{
+    position: relative;
+    display:inline-block;
+}
+
+.info{
+    position: absolute;
+    top:5%;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-style: justify;
+}
+
+h2{ /*todos los h2*/
+    text-align: center;
+    color:blue;
+    text-shadow:1px 1px 1px black;
+}
+
+/*ELEMENTOS FOOTER*/
+
+.footer{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    border-bottom: 2px solid black;
+}
+
+.act{
+    color:white;
+    background-color: blue;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    display:inline-block;
+    padding: 30px; 
+    border: 1px solid black;
+    margin-left: 10px;
+}
+
+.act:hover{
+    font-size: 24px;
+    cursor:pointer;
+}
+
+.fin{
+    color:white;
+    background-color: blue;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    display:inline-block;
+    padding: 20px;
+    width: 70%;
+    border: 1px solid black;
+}
+
+.fin:hover{
+    background-color: red;
+}

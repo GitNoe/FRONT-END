@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Raleway:wght@100&display=swap');
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('../fonts/Rubik-Regular.ttf');
+}
+
+h1{
+    font-family: 'Raleway';
+}
+
+p{
+    font-family: 'Amatic SC', cursive;
+}
+
+.importante {
+    font-family: 'Raleway';
+}
