@@ -1,0 +1,35 @@
+h2{
+    text-align: center;
+    background-color: cyan;
+}
+
+span{
+    background-color: lightgreen;
+}
+
+.menu_html{
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+
+}
+
+.menu_css{
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+}
+
+a{
+    color:black;
+    background-color: coral;
+}
+
+a:hover{
+    color:chartreuse;
+    cursor: pointer;
+}

@@ -89,6 +89,7 @@ h2{ /*todos los h2*/
     animation: 1s ease both;
 }
 
+/*ANIMACIÓN PARA QUE APAREZCA LA LETRA*/
 @keyframes magia {
     0%{
         opacity: 0;
