@@ -1,0 +1,74 @@
+/*tener en cuenta que las tres páginas se enlazan con este mismo css*/
+
+body{
+    background-color:darkkhaki;
+    margin:30px;
+}
+
+/*elementos compartidos header*/
+
+header{
+    height: 80px;
+    width: auto; 
+}
+
+.menu{
+    color: black;
+    background-color: cornsilk;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px;
+    border: 1px solid silver;
+    margin: 10px;
+}
+
+/*elementos compartidos main*/
+
+h2{
+    text-align: center;
+    font-style: italic;
+}
+
+h3{
+    text-decoration: underline;
+}
+
+/*elementos responsive*/
+
+.grid1, .grid2{ /*de esta forma modifico los dos a la vez*/
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, auto)); /*responsive*/
+    grid-gap: 10px;
+    background-color: darkkhaki;
+    align-items: center;
+}
+
+/*elementos del primer grid*/
+.grid1 > div{
+    text-align: center;
+    padding: 10px;
+    background-color: indianred;
+    box-shadow: 2px 2px 5px palevioletred;
+    border-radius: 10%;
+}
+
+/*elementos del segundo grid*/
+.grid2 > div{
+    text-align: center;
+    padding: 10px;
+    background-color: greenyellow;
+    box-shadow: 2px 2px 5px goldenrod;
+    border-radius: 20%;
+}
+
+/*una animación porque porqué no*/
+div:hover{
+    background-color: sienna;
+    cursor: pointer;
+}
+
+a:hover{
+    color:red;
+}
